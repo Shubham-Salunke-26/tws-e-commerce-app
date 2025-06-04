@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = 'shubhyash/easyshop-app'  // ✅ Updated to your DockerHub repo
+        DOCKER_IMAGE_NAME = 'shubhyash/easyshop-app'  
         DOCKER_MIGRATION_IMAGE_NAME = 'shubhyash/easyshop-migration'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
         GITHUB_CREDENTIALS = credentials('github-credentials')
